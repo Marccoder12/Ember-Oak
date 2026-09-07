@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-color: #fffefe;
+    --bg-color2:#fff6e8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: var(--bg-color2); */
+    background: url("https://images.food52.com/_z3Vu7XA-qK73A-xLva-lPhU-aY=/8e81abc9-a364-4ef3-b57a-cad0011d14d4--2018-0907_roys-3-ingredient-soy-steak-sauce-genius_3x2_ty-mecham_001.jpg?w=1920&q=75");
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+header nav{
+    display: none;
+}
+.header-content{
+    display: flex;
+    height: 100%;
+    padding: 2%;
+    justify-content: space-between;
+    height: 100%;
+    /* padding: 5%; */
+    /* border-bottom: 1px solid #ccc; */
+    box-shadow: 0px 0px 4px #ccc;
+}
+header h2{
+    font-family: 'Valley Sans', sans-serif;
+    font-size: clamp(10px, 5vw, 30px);
+    color: rgb(66, 58, 52);
+}
+header button:hover{
+    cursor: pointer;
+}
+header button{
+    background: none;
+    border: none;
+    height: 100%;
+    font-size: 20px;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 80%;
+    max-width: 200px;
+    height: 100vh;
+
+    background-color: var(--bg-color);
+    /* background-color: blue; */
+
+    z-index: 40;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+aside.open {
+    transform: translateX(0);
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 80px 30px;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(66, 58, 52);
+    font-family: 'Valley Sans', sans-serif;
+    font-size: 20px;
+}
+main{
+    text-align: center;
+    padding-top: clamp(100px, 10vw, 200px);
+    /* background-color: var(--bg-color); */
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2fr;
+    padding-bottom: 10%;
+}
+
+main h1{
+    font-family: 'Valley Sans', sans-serif;
+    font-size: clamp(30px, 5vw, 50px);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 4px #585858;
+}
+main span{
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 3vw, 30px);
+    color: rgb(238, 235, 232);
+    text-shadow: 0px 1px 4px #000;
+}
+main a{display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--bg-color);
+    color: #222222;
+    border: 1px solid #6b6560a8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: bold;
+    font-family: Valley Sans, sans-serif;
+}
+
+.Our-story{
+    background-color: var(--bg-color2);
+    height: calc(2fr);
+    padding: 20px;
+    padding-top: 7%;
+    z-index: 1000;
+    /* border-bottom: 1px solid #e4dbd6; */
+}
+.Our-story h2{
+    font-family: 'Valley Sans', sans-serif;
+    font-size: clamp(20px, 3vw, 30px);
+    color: rgb(66, 58, 52);
+}
+
+.Our-story p{
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(15px, 2vw, 20px);
+    color: rgb(66, 58, 52);
+    margin-left: 2%;
+    padding-left: 2%;
+    border-left: 1px solid rgba(48, 26, 13, 0.26);
+    
+}
+
+.menu-highlights{
+    background-color: #fff4ea;
+    height: 1fr;
+    padding: 2%;
+    box-shadow: 0px -1px 4px #47241042;
+}
+
+
+.dishes{
+    height: 100%;
+    width: 100%;
+}
+
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.dishes .dish-card{
+    overflow: hidden;
+    background-color: #ffffff4b;
+    padding: 2%;
+    border: 1px solid #fcdecc;
+    border-radius: 12%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: clamp(16px, 2vw, 25px);
+    font-family: 'Roboto';
+    font-weight: 400;
+    box-shadow: 0px 1px 5px #ccc;
+
+}
+.dishes .dish-card img{
+    display: block;
+    border-radius: 12%;
+    box-shadow: 0px 1px 5px #ccc;
+    width: 100%;
+}
+
+#Contact-us{
+    background-color: rgb(255, 253, 249);
+    padding: 2%;
+    padding-top: 7%;
+}
+#Contact-us h2{
+    font-family: Valley sans;
+    color: #312723;
+    font-size: clamp(20px, 5.5vw, 40px);
+}
+#Contact-us .contact-msg{
+    /* font-size: clamp(10px, 3.5vw, 30px); */
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(15px, 2vw, 20px);
+    color: rgb(66, 58, 52);
+}
+
+#Contact-us .visit{
+    background-color: #8acfbb;
+    padding: 4%;
+    box-shadow: 0px 0px 2px #269c39;
+}
+#Contact-us .visit h3{
+    font-size: clamp(20px, 2vw, 40px);
+    font-family: 'Valley Sans', serif;
+    
+}
+#Contact-us .visit p{
+    font-size: clamp(18px, 2vw, 30px);
+    font-family: 'Valley Sans', serif;
+    
+}
+#Contact-us .visit a{
+    font-family: 'Valley Sans', serif;
+    
+}
+#Contact-us .call{
+    margin-top: 3%;
+    background-color: #8ab9cf;
+    padding: 4%;
+    box-shadow: 0px 0px 2px #26469c;
+}
+
+#Contact-us .call h4{
+    display: block;
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+.contact-info{
+    margin-top: 3%;
+    padding: 4%;
+    background-color: #cfa38a5b;
+    font-family: 'Valley Sans', serif;
+}
+
+
+
+
+@media (min-width: 800px) {
+    header button{
+        display: none;
+}
+header{
+    width: 100%;
+}
+.header-content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-content nav{
+    padding-left: clamp(50px, 2vw, 30px);
+    width: 1fr;
+}
+.header-content nav a{
+    transition: 0.3s;
+    margin: 12px;
+    text-decoration: none;
+    color: #693a2c;
+    font-size: clamp(18px, 2vw, 30px);
+    font-family: 'Roboto';
+    margin: 33.5px;
+}
+.header-content nav a:hover{
+    transition: 0.3s;
+    padding: 20px;
+    background-color: rgb(250, 219, 172);
+    margin: 12px;
+    text-decoration: none;
+    color: #693a2c;
+    font-size: clamp(18px, 2vw, 30px);
+    font-family: 'Roboto';
+}
+header div{
+    width: 100%;
+}
+header div nav{
+    display: block;
+    width: 1fr;
+}
+aside{
+    display: none;
+}
+}
