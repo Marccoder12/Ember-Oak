@@ -14,7 +14,7 @@ html {
 }
 body{
     /* background-color: var(--bg-color2); */
-    background: url("https://images.food52.com/_z3Vu7XA-qK73A-xLva-lPhU-aY=/8e81abc9-a364-4ef3-b57a-cad0011d14d4--2018-0907_roys-3-ingredient-soy-steak-sauce-genius_3x2_ty-mecham_001.jpg?w=1920&q=75");
+    background: url("/res/bg.jpg");
 }
 header{
     position: fixed;
