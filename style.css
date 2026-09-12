@@ -14,7 +14,7 @@ html {
 }
 body{
     /* background-color: var(--bg-color2); */
-    background: url("/res/bg.jpg");
+    background: url("./res/bg.jpg");
 }
 header{
     position: fixed;
