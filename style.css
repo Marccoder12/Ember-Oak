@@ -119,13 +119,14 @@ main span{
     text-shadow: 0px 1px 4px #000;
 }
 main a{display: inline-block;
+    background-color: #d48d5d;
     text-decoration: none;
     margin-top: 20px;
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     color: #222222;
     border: 1px solid #6b6560a8;
     border-radius: 5px;
